@@ -1,0 +1,60 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+}
+
+/* Smooth hover effect for the product cards */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.product-card:hover {
+  transform: translateY(-8px); /* Lift the card slightly */
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15); /* Deeper shadow on hover */
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Featured item block */
+.featured-card {
+  border: 2px solid #ffc107;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.featured-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Category buttons */
+.category-btn {
+  border-radius: 50px;
+  padding: 6px 20px;
+}
+
+/* Dark mode overrides (Bootstrap sets data-bs-theme on <html>) */
+[data-bs-theme="dark"] body {
+  background-color: #121416;
+}
+
+[data-bs-theme="dark"] .hero-section {
+  background: linear-gradient(135deg, #1f2327 0%, #2b3035 100%);
+}
+
+[data-bs-theme="dark"] .product-card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}
+
+[data-bs-theme="dark"] .product-card:hover {
+  box-shadow: 0 12px 20px rgba(0,0,0,0.7);
+}
